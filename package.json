@@ -1,0 +1,23 @@
+{
+  "name": "cypresstest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "ci": "start-server-and-test start http://localhost:3000 cypress:all",
+    "cypress": "cypress open",
+    "cypress:all": "cypress run",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cypress": "^2.1.0",
+    "start-server-and-test": "^1.4.1"
+  }
+}
